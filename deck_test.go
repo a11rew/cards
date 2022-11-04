@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"testing"
 )
@@ -13,8 +12,6 @@ func TestNewDeck(t *testing.T) {
 	if len(d) != 56 {
 		t.Errorf("Expected deck length of 56, got: %v", len(d))
 	}
-
-	fmt.Println(d[len(d)-1])
 
 	if d[0] != "Ace of Spades" {
 		t.Errorf("Expected first card to be Ace of Spades, got: %v", d[0])
